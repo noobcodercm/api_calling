@@ -15,7 +15,10 @@ app.use(express.urlencoded({extended: true}))
 
 
 app.get("/",(req,res)=>{
-    res.send("Jay Shree RAM");
+    res.send("Welcome to Server ");
+    res.send("use /reg for register user(sign up)");
+    res.send("use /login for login user(sign in)");
+    res.send("use /users to see all user in database");
 })
 
 const auth = (req,res,next) =>{
